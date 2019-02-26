@@ -6,13 +6,13 @@
 初定 2019-03-16 周六  或  2019-03-17 周日
 
 ## 地点：
-初定 wework@深业上城 (Tony Duan)
+初定 wework@深业上城 (负责人：Tony Duan)
 
 ## 人物：
 
 ### 组织者
 
-组长。制定活动的日程，全面协调活动的相关事宜。活动当日主持等部分。(Tony Duan)
+组长。制定活动的日程，全面协调活动的相关事宜。活动当日主持等部分。(负责人：Tony Duan)
 
 一个组员。负责活动的宣传，活动当日场记、拍摄等部分。（负责人：Wang Feng）
 
@@ -26,17 +26,20 @@
 
 ### 宣传
 meetup（负责人：Wang Feng）
+
 活动行（负责人：Wang Feng）
+
 微信文章（负责人：Wang Feng）
+
 其他（负责人：Wang Feng）
 
 
 ### 活动当天
-1.欢迎 Announce TFUG! Introduce Dev Summit and the agenda [15mins] (Tony Duan)
+1.欢迎 Announce TFUG! Introduce Dev Summit and the agenda [15mins] (负责人：Tony Duan)
 
-2.Play Video Recorded  Keynote from conference [70mins]
+2.Play Video Recorded  Keynote from conference [70mins]（负责人：Liu Ying）
 
-3.Short Break Grab a snack and take a rest [15 mins]
+3.Short Break Grab a snack and take a rest [15 mins]（负责人：Liu Ying）
 
 4.Local Session Arrange local speaker to give talk and discussion with attendees [60 mins]（负责人：Ye Junpeng）
 
