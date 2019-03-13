@@ -1,0 +1,3080 @@
+﻿1
+00:00:00,400 --> 00:00:08,220
+[Music]
+
+2
+00:00:08,220 --> 00:00:11,130
+good morning everyone i'm melina program
+
+3
+00:00:11,130 --> 00:00:14,660
+manager for tensorflow
+
+4
+00:00:14,660 --> 00:00:16,910
+thank you
+
+5
+00:00:16,910 --> 00:00:19,500
+welcome to the 2019 tensorflow
+
+6
+00:00:19,500 --> 00:00:21,509
+developer summit these are a third
+
+7
+00:00:21,509 --> 00:00:23,550
+annual and largest developer summit two
+
+8
+00:00:23,550 --> 00:00:25,920
+to date and I'm so happy to have all of
+
+9
+00:00:25,920 --> 00:00:27,599
+you here both right here in the room and
+
+10
+00:00:27,599 --> 00:00:30,000
+on the live stream welcome so I'm just
+
+11
+00:00:30,000 --> 00:00:32,640
+curious by a show of hands who travelled
+
+12
+00:00:32,640 --> 00:00:34,739
+a little bit further maybe to get here
+
+13
+00:00:34,739 --> 00:00:41,879
+Europe Asia Africa as far as US
+
+14
+00:00:41,879 --> 00:00:46,530
+Australia whoa awesome welcome a welcome
+
+15
+00:00:46,530 --> 00:00:49,079
+to all of you we have a lot of great
+
+16
+00:00:49,079 --> 00:00:51,270
+talk talks ahead some exciting
+
+17
+00:00:51,270 --> 00:00:53,610
+announcements and cool demos so let's
+
+18
+00:00:53,610 --> 00:00:57,300
+get going we are living in a formative
+
+19
+00:00:57,300 --> 00:00:59,190
+moment of history right now we're
+
+20
+00:00:59,190 --> 00:01:00,660
+mission where machine learning is
+
+21
+00:01:00,660 --> 00:01:02,760
+experiencing an unprecedented revolution
+
+22
+00:01:02,760 --> 00:01:05,430
+though we fundamentally think about and
+
+23
+00:01:05,430 --> 00:01:07,710
+interact with computer systems hat has
+
+24
+00:01:07,710 --> 00:01:09,660
+inherently changed due to the
+
+25
+00:01:09,660 --> 00:01:11,850
+breakthroughs in in the field of AI and
+
+26
+00:01:11,850 --> 00:01:15,539
+this is due to three major factors first
+
+27
+00:01:15,539 --> 00:01:18,840
+we have lots more compute specially
+
+28
+00:01:18,840 --> 00:01:21,330
+designed ml accelerators like like these
+
+29
+00:01:21,330 --> 00:01:23,459
+teep teep ii use let you train models
+
+30
+00:01:23,459 --> 00:01:28,590
+faster than ever before
+
+31
+00:01:28,590 --> 00:01:30,899
+secondly we've breakthroughs in in the
+
+32
+00:01:30,899 --> 00:01:32,909
+field of machine learning there are
+
+33
+00:01:32,909 --> 00:01:34,740
+novel algorithms created every month
+
+34
+00:01:34,740 --> 00:01:37,409
+like a bird and an innovative approach
+
+35
+00:01:37,409 --> 00:01:39,569
+to natural language processing which
+
+36
+00:01:39,569 --> 00:01:42,000
+lets anyone around the world train their
+
+37
+00:01:42,000 --> 00:01:42,990
+own state state-of-the-art
+
+38
+00:01:42,990 --> 00:01:47,159
+question-answering system and finally we
+
+39
+00:01:47,159 --> 00:01:49,469
+have lots and lots of data we're seeing
+
+40
+00:01:49,469 --> 00:01:51,179
+a new we're seeing new waves of data
+
+41
+00:01:51,179 --> 00:01:54,090
+data sets come from all kinds of
+
+42
+00:01:54,090 --> 00:01:56,670
+disciplines for example then the new
+
+43
+00:01:56,670 --> 00:02:00,119
+open images extended data set this is a
+
+44
+00:02:00,119 --> 00:02:01,739
+collection of over four hundred and
+
+45
+00:02:01,739 --> 00:02:05,069
+seventy eight thousand images that
+
+46
+00:02:05,069 --> 00:02:08,759
+volunteers have have added with the
+
+47
+00:02:08,759 --> 00:02:12,310
+pursuit of a inclusivity and diversity
+
+48
+00:02:12,310 --> 00:02:15,670
+so all three of these are basically
+
+49
+00:02:15,670 --> 00:02:17,860
+changing how we solve challenging a
+
+50
+00:02:17,860 --> 00:02:20,319
+real-world problems and it's really cool
+
+51
+00:02:20,319 --> 00:02:22,900
+to see that tensorflow is the platform
+
+52
+00:02:22,900 --> 00:02:25,480
+that's powering this machine learning
+
+53
+00:02:25,480 --> 00:02:28,030
+revolution it's it's it's allowing
+
+54
+00:02:28,030 --> 00:02:30,580
+developers businesses and researchers
+
+55
+00:02:30,580 --> 00:02:32,709
+around the world to benefit from
+
+56
+00:02:32,709 --> 00:02:34,959
+intelligent applications and we've been
+
+57
+00:02:34,959 --> 00:02:37,270
+really amazed by what the community has
+
+58
+00:02:37,270 --> 00:02:40,020
+built with tensorflow
+
+59
+00:02:40,020 --> 00:02:42,010
+developers have had been using
+
+60
+00:02:42,010 --> 00:02:44,950
+tensorflow to solve problems in in their
+
+61
+00:02:44,950 --> 00:02:48,010
+local communities so I don't know if any
+
+62
+00:02:48,010 --> 00:02:50,080
+of you were in the barrier during the
+
+63
+00:02:50,080 --> 00:02:52,540
+tragic paradise fire but one of the
+
+64
+00:02:52,540 --> 00:02:54,850
+consequences was that air quality was
+
+65
+00:02:54,850 --> 00:02:58,500
+really bad it was in the high to mid to
+
+66
+00:02:58,500 --> 00:03:00,420
+200 on the air koala
+
+67
+00:03:00,420 --> 00:03:03,250
+quality index and as difficult as this
+
+68
+00:03:03,250 --> 00:03:06,459
+was for for us in Delhi India during a
+
+69
+00:03:06,459 --> 00:03:10,120
+during winter the air quality can get up
+
+70
+00:03:10,120 --> 00:03:13,180
+to about the the four hundreds on on the
+
+71
+00:03:13,180 --> 00:03:16,180
+air quality index and this is concerned
+
+72
+00:03:16,180 --> 00:03:19,360
+very dangerous so pollution sensors can
+
+73
+00:03:19,360 --> 00:03:21,100
+can help gauge air quality but they're
+
+74
+00:03:21,100 --> 00:03:24,760
+very expensive to deploy at scale so a
+
+75
+00:03:24,760 --> 00:03:27,160
+group of students in in Delhi built
+
+76
+00:03:27,160 --> 00:03:30,130
+image classifiers in tensorflow and and
+
+77
+00:03:30,130 --> 00:03:32,739
+use those to the built-in building an
+
+78
+00:03:32,739 --> 00:03:35,829
+app called air cognizer and what it does
+
+79
+00:03:35,829 --> 00:03:38,230
+is is basically just by using the images
+
+80
+00:03:38,230 --> 00:03:42,450
+on a smartphone it it gives an accurate
+
+81
+00:03:42,450 --> 00:03:47,200
+estimation of the air quality businesses
+
+82
+00:03:47,200 --> 00:03:49,209
+are also fundamentally improving their
+
+83
+00:03:49,209 --> 00:03:51,100
+products and services built with
+
+84
+00:03:51,100 --> 00:03:51,760
+tensorflow
+
+85
+00:03:51,760 --> 00:03:54,489
+for example to a Witter strives to keep
+
+86
+00:03:54,489 --> 00:03:57,280
+its global users informed with with
+
+87
+00:03:57,280 --> 00:03:59,410
+relevant and healthy content but this
+
+88
+00:03:59,410 --> 00:04:01,120
+can be hard when the users follow
+
+89
+00:04:01,120 --> 00:04:03,820
+hundreds or even thousands of people so
+
+90
+00:04:03,820 --> 00:04:05,769
+to solve this Twitter launched ranked
+
+91
+00:04:05,769 --> 00:04:08,290
+timeline animal-powered feed which was
+
+92
+00:04:08,290 --> 00:04:09,940
+the most relevant tweets at the top of
+
+93
+00:04:09,940 --> 00:04:11,920
+the time timeline ensuring users never
+
+94
+00:04:11,920 --> 00:04:13,390
+missed their best and most relevant
+
+95
+00:04:13,390 --> 00:04:15,100
+content and by using ten servos
+
+96
+00:04:15,100 --> 00:04:17,919
+ecosystem of tools like tensorflow hub
+
+97
+00:04:17,919 --> 00:04:19,919
+tensor board and tensor flow model
+
+98
+00:04:19,919 --> 00:04:22,960
+analysis Twitter was able to reduce both
+
+99
+00:04:22,960 --> 00:04:25,700
+training and model iteration time
+
+100
+00:04:25,700 --> 00:04:29,090
+as well as increase the timeline quality
+
+101
+00:04:29,090 --> 00:04:32,840
+and engagement for users specific
+
+102
+00:04:32,840 --> 00:04:35,090
+industries are also being very much
+
+103
+00:04:35,090 --> 00:04:38,060
+transformed by ml G health care for for
+
+104
+00:04:38,060 --> 00:04:39,860
+example is using tensorflow to improve
+
+105
+00:04:39,860 --> 00:04:43,070
+MRI imaging these tensorflow models
+
+106
+00:04:43,070 --> 00:04:45,890
+they're on real-time on MRI scanners and
+
+107
+00:04:45,890 --> 00:04:47,840
+can actually detect the orientation of
+
+108
+00:04:47,840 --> 00:04:50,540
+the patient inside the scanner and and
+
+109
+00:04:50,540 --> 00:04:52,790
+and this is a really great because not
+
+110
+00:04:52,790 --> 00:04:55,520
+only does this help the diagnosis but
+
+111
+00:04:55,520 --> 00:05:00,080
+but also lowers the errors and exam time
+
+112
+00:05:00,080 --> 00:05:02,360
+but also it what's really cool is it
+
+113
+00:05:02,360 --> 00:05:06,050
+basically expands this technology to
+
+114
+00:05:06,050 --> 00:05:10,240
+many many more people around the world
+
+115
+00:05:10,240 --> 00:05:12,740
+tensorflow also powers bleeding-edge
+
+116
+00:05:12,740 --> 00:05:14,990
+research at a team of scientists
+
+117
+00:05:14,990 --> 00:05:17,540
+researchers and engineers at nurse Oak
+
+118
+00:05:17,540 --> 00:05:19,700
+Ridge National Laboratory and an ad
+
+119
+00:05:19,700 --> 00:05:21,980
+Vidya recently won the Gordon Bell prize
+
+120
+00:05:21,980 --> 00:05:24,980
+for applying deep learning to to study
+
+121
+00:05:24,980 --> 00:05:29,060
+the effects of extreme weather patterns
+
+122
+00:05:29,060 --> 00:05:32,060
+using high-performance computing they
+
+123
+00:05:32,060 --> 00:05:35,020
+built and scaled a neural network to I
+
+124
+00:05:35,020 --> 00:05:38,060
+are using tensor flow of course to a run
+
+125
+00:05:38,060 --> 00:05:39,460
+on Summit their world's fastest
+
+126
+00:05:39,460 --> 00:05:41,810
+supercomputer they achieved the peak and
+
+127
+00:05:41,810 --> 00:05:44,210
+sustained throughput of 1.13 exa flops
+
+128
+00:05:44,210 --> 00:05:46,940
+and FPC 16 which is equivalent to more
+
+129
+00:05:46,940 --> 00:05:49,250
+than the quantum computations per second
+
+130
+00:05:49,250 --> 00:05:50,870
+I just think I need to pause for a
+
+131
+00:05:50,870 --> 00:05:52,670
+second because that is ridiculously fast
+
+132
+00:05:52,670 --> 00:05:58,520
+right in addition to to these awesome
+
+133
+00:05:58,520 --> 00:06:00,110
+examples there are thousands and
+
+134
+00:06:00,110 --> 00:06:01,820
+thousands of people all over the world
+
+135
+00:06:01,820 --> 00:06:04,310
+doing amazing work using tensor flow and
+
+136
+00:06:04,310 --> 00:06:06,020
+the power and impact of tensor flow
+
+137
+00:06:06,020 --> 00:06:07,850
+would not be what it is without all of
+
+138
+00:06:07,850 --> 00:06:11,480
+you thank you it's it's with your help
+
+139
+00:06:11,480 --> 00:06:14,780
+and an interest that tentacle has become
+
+140
+00:06:14,780 --> 00:06:16,730
+the most widely adopted ML framework in
+
+141
+00:06:16,730 --> 00:06:19,100
+the world and right here I'd like to
+
+142
+00:06:19,100 --> 00:06:22,060
+show the latest map of github stars who
+
+143
+00:06:22,060 --> 00:06:24,530
+self-identified their look location I'm
+
+144
+00:06:24,530 --> 00:06:26,210
+sure many of the dots on this map are
+
+145
+00:06:26,210 --> 00:06:28,130
+right here in the room and on the live
+
+146
+00:06:28,130 --> 00:06:29,660
+ships I just want to say thank you one
+
+147
+00:06:29,660 --> 00:06:32,729
+more time
+
+148
+00:06:32,729 --> 00:06:34,409
+and this growth has been absolutely
+
+149
+00:06:34,409 --> 00:06:36,089
+amazing tensorflow has been down
+
+150
+00:06:36,089 --> 00:06:40,110
+downloaded over 41 million times and has
+
+151
+00:06:40,110 --> 00:06:44,600
+over 1,800 contributors worldwide
+
+152
+00:06:44,600 --> 00:06:47,630
+last November we celebrated ten tenths
+
+153
+00:06:47,630 --> 00:06:49,250
+of a third birthday by taking a look
+
+154
+00:06:49,250 --> 00:06:50,960
+back at the different components that
+
+155
+00:06:50,960 --> 00:06:53,330
+that we've added throughout the years
+
+156
+00:06:53,330 --> 00:06:55,550
+but today we'd like to talk about how
+
+157
+00:06:55,550 --> 00:06:57,470
+tensorflow has matured as a platform to
+
+158
+00:06:57,470 --> 00:06:59,660
+become an entire end-to-end ecosystem
+
+159
+00:06:59,660 --> 00:07:02,960
+and tensorflow 2.0 is the start of a new
+
+160
+00:07:02,960 --> 00:07:05,150
+era and we're committed and focused on
+
+161
+00:07:05,150 --> 00:07:07,430
+making it the best ml platform for all
+
+162
+00:07:07,430 --> 00:07:09,860
+our users so talk more about tensorflow
+
+163
+00:07:09,860 --> 00:07:12,170
+to tirado I'd like to introduce Raja
+
+164
+00:07:12,170 --> 00:07:14,030
+manga engineering director of tensor
+
+165
+00:07:14,030 --> 00:07:23,650
+flow on stage thank you Thank You Lena
+
+166
+00:07:23,650 --> 00:07:25,280
+hello everyone
+
+167
+00:07:25,280 --> 00:07:27,980
+I'm Raja I am an engineer intensive
+
+168
+00:07:27,980 --> 00:07:29,210
+floor and have been involved with this
+
+169
+00:07:29,210 --> 00:07:31,820
+since the very beginning it's been great
+
+170
+00:07:31,820 --> 00:07:34,670
+to see what we've been up to over the
+
+171
+00:07:34,670 --> 00:07:36,260
+last few years all the amazing growth
+
+172
+00:07:36,260 --> 00:07:37,820
+and all the amazing things that you've
+
+173
+00:07:37,820 --> 00:07:40,130
+done with it
+
+174
+00:07:40,130 --> 00:07:43,800
+it's also been great to hear from you
+
+175
+00:07:43,800 --> 00:07:45,150
+that's what you like about tensile foam
+
+176
+00:07:45,150 --> 00:07:46,979
+and equally importantly what you would
+
+177
+00:07:46,979 --> 00:07:48,990
+like to see improved in terms of your
+
+178
+00:07:48,990 --> 00:07:52,169
+feedbacks been loud and clear you asked
+
+179
+00:07:52,169 --> 00:07:54,090
+for simpler more intuitive api's and
+
+180
+00:07:54,090 --> 00:07:56,729
+development experiences you pointed out
+
+181
+00:07:56,729 --> 00:07:58,740
+areas of redundancy and complexity and
+
+182
+00:07:58,740 --> 00:08:01,199
+you asked for better documentation and
+
+183
+00:08:01,199 --> 00:08:03,790
+examples
+
+184
+00:08:03,790 --> 00:08:05,260
+and this is exactly what we've been
+
+185
+00:08:05,260 --> 00:08:08,110
+focusing on with turns flow 2.0
+
+186
+00:08:08,110 --> 00:08:10,360
+to make it easy we focused on Keros for
+
+187
+00:08:10,360 --> 00:08:12,699
+a single set of api's and combine it
+
+188
+00:08:12,699 --> 00:08:14,259
+with eager execution for the simplicity
+
+189
+00:08:14,259 --> 00:08:17,229
+of python its ex ability to try the
+
+190
+00:08:17,229 --> 00:08:20,020
+craziest ideas inability to go beyond an
+
+191
+00:08:20,020 --> 00:08:22,389
+exaflop tensorflow is more powerful than
+
+192
+00:08:22,389 --> 00:08:23,719
+ever
+
+193
+00:08:23,719 --> 00:08:25,939
+with the same robustness and performance
+
+194
+00:08:25,939 --> 00:08:28,279
+you expect in production battle-tested
+
+195
+00:08:28,279 --> 00:08:31,000
+and Google
+
+196
+00:08:31,000 --> 00:08:32,740
+let's start with the overall
+
+197
+00:08:32,740 --> 00:08:34,000
+architecture for tensorflow
+
+198
+00:08:34,000 --> 00:08:36,310
+you may be familiar with this high-level
+
+199
+00:08:36,310 --> 00:08:38,140
+architecture they've been lots of
+
+200
+00:08:38,140 --> 00:08:39,820
+components and features we've added
+
+201
+00:08:39,820 --> 00:08:42,070
+throughout the years to help support
+
+202
+00:08:42,070 --> 00:08:43,690
+workloads to go from training to
+
+203
+00:08:43,690 --> 00:08:46,720
+deployment intensive flow 2.0 we're
+
+204
+00:08:46,720 --> 00:08:48,310
+really making sure that these components
+
+205
+00:08:48,310 --> 00:08:51,770
+work better together
+
+206
+00:08:51,770 --> 00:08:53,990
+here's how these powerful API components
+
+207
+00:08:53,990 --> 00:08:55,820
+fit together for the entire training
+
+208
+00:08:55,820 --> 00:08:58,550
+work for the TF data for data ingestion
+
+209
+00:08:58,550 --> 00:08:59,570
+and transformation
+
+210
+00:08:59,570 --> 00:09:02,330
+caris and pre-made estimators from model
+
+211
+00:09:02,330 --> 00:09:05,029
+building training with eager execution
+
+212
+00:09:05,029 --> 00:09:07,910
+and graphs and finally packaging for
+
+213
+00:09:07,910 --> 00:09:11,470
+deployment would save money
+
+214
+00:09:11,470 --> 00:09:15,230
+let's take a look at some examples the
+
+215
+00:09:15,230 --> 00:09:17,540
+first thing you need is data often you
+
+216
+00:09:17,540 --> 00:09:19,220
+may want to validate results or test
+
+217
+00:09:19,220 --> 00:09:21,230
+your new ideas or in common public data
+
+218
+00:09:21,230 --> 00:09:24,080
+set tensorflow data sets includes a
+
+219
+00:09:24,080 --> 00:09:26,000
+large in rapidly growing collection of
+
+220
+00:09:26,000 --> 00:09:27,710
+public data sets that you can get
+
+221
+00:09:27,710 --> 00:09:30,230
+started with very easily and combined
+
+222
+00:09:30,230 --> 00:09:32,180
+with TF data it is simple to wrap your
+
+223
+00:09:32,180 --> 00:09:34,649
+own narrative
+
+224
+00:09:34,649 --> 00:09:37,029
+here's a small sample of the data sets
+
+225
+00:09:37,029 --> 00:09:38,980
+that are available and all of these and
+
+226
+00:09:38,980 --> 00:09:43,450
+many more are included there
+
+227
+00:09:43,450 --> 00:09:46,100
+then with Karis you can express the
+
+228
+00:09:46,100 --> 00:09:48,230
+model with layers just as you are used
+
+229
+00:09:48,230 --> 00:09:50,720
+to thinking about it standard training
+
+230
+00:09:50,720 --> 00:09:53,090
+and evaluation is packaged as well with
+
+231
+00:09:53,090 --> 00:09:58,520
+model fit and evaluate
+
+232
+00:09:58,520 --> 00:10:00,260
+since steep learning models are often
+
+233
+00:10:00,260 --> 00:10:02,720
+computationally expensive you may wanna
+
+234
+00:10:02,720 --> 00:10:04,400
+try scaling this across more than one
+
+235
+00:10:04,400 --> 00:10:07,160
+device tensorflow comes pre-built with
+
+236
+00:10:07,160 --> 00:10:08,840
+mirrored strategy that works with small
+
+237
+00:10:08,840 --> 00:10:14,460
+additions to your code
+
+238
+00:10:14,460 --> 00:10:16,470
+starting from a pre-trained modular
+
+239
+00:10:16,470 --> 00:10:19,200
+component also works well to reduce some
+
+240
+00:10:19,200 --> 00:10:21,540
+of this computational cost to make it
+
+241
+00:10:21,540 --> 00:10:21,840
+easy
+
+242
+00:10:21,840 --> 00:10:23,610
+tensorflow hub provides a large
+
+243
+00:10:23,610 --> 00:10:25,320
+collection of pre trained components
+
+244
+00:10:25,320 --> 00:10:27,030
+that you can include in your model and
+
+245
+00:10:27,030 --> 00:10:29,040
+even find you in for your specific data
+
+246
+00:10:29,040 --> 00:10:32,970
+set
+
+247
+00:10:32,970 --> 00:10:35,699
+Kerris an estimator offer high-level
+
+248
+00:10:35,699 --> 00:10:37,350
+building blocks for an easy-to-use
+
+249
+00:10:37,350 --> 00:10:39,600
+package they come with everything you
+
+250
+00:10:39,600 --> 00:10:42,920
+might need for typical training jobs
+
+251
+00:10:42,920 --> 00:10:44,600
+but sometimes you need a bit more
+
+252
+00:10:44,600 --> 00:10:46,519
+control for example when you're
+
+253
+00:10:46,519 --> 00:10:51,270
+exploring new kinds of algorithms
+
+254
+00:10:51,270 --> 00:10:52,950
+let's say you wanted to build a custom
+
+255
+00:10:52,950 --> 00:10:55,740
+encoder for machine translation here's
+
+256
+00:10:55,740 --> 00:10:57,300
+how you might do this by sub-classing a
+
+257
+00:10:57,300 --> 00:11:00,149
+model here you can focus on implementing
+
+258
+00:11:00,149 --> 00:11:02,490
+the computational algorithm and let the
+
+259
+00:11:02,490 --> 00:11:05,640
+framework take care of the rest and you
+
+260
+00:11:05,640 --> 00:11:07,110
+could even customize the training loop
+
+261
+00:11:07,110 --> 00:11:08,970
+to get full control over the gradients
+
+262
+00:11:08,970 --> 00:11:14,949
+and the optimization process
+
+263
+00:11:14,949 --> 00:11:17,470
+while training models rather package
+
+264
+00:11:17,470 --> 00:11:19,540
+with carers or more complex ones it's
+
+265
+00:11:19,540 --> 00:11:21,249
+often valuable to understand the
+
+266
+00:11:21,249 --> 00:11:23,709
+progress and even analyze the model in
+
+267
+00:11:23,709 --> 00:11:26,290
+detail tensor board provides a lot of
+
+268
+00:11:26,290 --> 00:11:28,830
+visualization to help with this
+
+269
+00:11:28,830 --> 00:11:31,200
+and now it comes full integration with
+
+270
+00:11:31,200 --> 00:11:33,240
+inter collab and other jupiter notebooks
+
+271
+00:11:33,240 --> 00:11:34,590
+allowing you to see the same
+
+272
+00:11:34,590 --> 00:11:36,540
+visualizations right from within your
+
+273
+00:11:36,540 --> 00:11:39,910
+notebook
+
+274
+00:11:39,910 --> 00:11:41,890
+all of these features are available in
+
+275
+00:11:41,890 --> 00:11:43,760
+tensorflow 2.0
+
+276
+00:11:43,760 --> 00:11:46,459
+and I'm really excited to announce that
+
+277
+00:11:46,459 --> 00:11:47,959
+our alpha release is available for you
+
+278
+00:11:47,959 --> 00:11:57,560
+as of today many of you in the room and
+
+279
+00:11:57,560 --> 00:11:59,779
+across the world really helped with lots
+
+280
+00:11:59,779 --> 00:12:02,029
+of work in testing to make this possible
+
+281
+00:12:02,029 --> 00:12:03,920
+I really think they'd like to take this
+
+282
+00:12:03,920 --> 00:12:05,779
+moment to thank you all please give
+
+283
+00:12:05,779 --> 00:12:07,790
+yourself a round of applause we really
+
+284
+00:12:07,790 --> 00:12:09,720
+couldn't have done this without you
+
+285
+00:12:09,720 --> 00:12:16,760
+[Applause]
+
+286
+00:12:16,760 --> 00:12:18,260
+in addition to all the great
+
+287
+00:12:18,260 --> 00:12:20,030
+improvements we talked about this
+
+288
+00:12:20,030 --> 00:12:21,650
+release comes with a converter script to
+
+289
+00:12:21,650 --> 00:12:23,780
+help you upgrade from one point X and a
+
+290
+00:12:23,780 --> 00:12:25,520
+compatibility module to give you access
+
+291
+00:12:25,520 --> 00:12:27,350
+to the one point X API is for easy
+
+292
+00:12:27,350 --> 00:12:30,480
+transition
+
+293
+00:12:30,480 --> 00:12:32,040
+working towards the full release over
+
+294
+00:12:32,040 --> 00:12:36,440
+the next quarter
+
+295
+00:12:36,440 --> 00:12:38,449
+there's a lot of work going on to make
+
+296
+00:12:38,449 --> 00:12:40,339
+tensorflow 2.0 it really work well for
+
+297
+00:12:40,339 --> 00:12:42,470
+you you can track the progress and
+
+298
+00:12:42,470 --> 00:12:44,269
+provide feedback on the tents of locate
+
+299
+00:12:44,269 --> 00:12:50,750
+hub projects page
+
+300
+00:12:50,750 --> 00:12:52,670
+you asked for better documentation and
+
+301
+00:12:52,670 --> 00:12:54,500
+we work to streamline our docks four
+
+302
+00:12:54,500 --> 00:13:00,600
+api's guides and tutorials
+
+303
+00:13:00,600 --> 00:13:02,130
+all of this material will be available
+
+304
+00:13:02,130 --> 00:13:04,410
+today on the newly redesigned tensorflow
+
+305
+00:13:04,410 --> 00:13:06,390
+door org website we'll find more
+
+306
+00:13:06,390 --> 00:13:09,360
+examples documentation and tools to get
+
+307
+00:13:09,360 --> 00:13:11,580
+started we're really very excited about
+
+308
+00:13:11,580 --> 00:13:14,769
+these changes and what's to come
+
+309
+00:13:14,769 --> 00:13:16,149
+and to tell you more about improvements
+
+310
+00:13:16,149 --> 00:13:17,379
+intensive flow for research and
+
+311
+00:13:17,379 --> 00:13:19,059
+production I'd like to welcome Megan
+
+312
+00:13:19,059 --> 00:13:28,509
+Cachola on stage thank you thanks Rajat
+
+313
+00:13:28,509 --> 00:13:30,519
+tensorflow has always been a platform
+
+314
+00:13:30,519 --> 00:13:32,860
+for research to production we just saw
+
+315
+00:13:32,860 --> 00:13:34,809
+how tensorflow as high-level api's make
+
+316
+00:13:34,809 --> 00:13:36,429
+it easy to get started and build your
+
+317
+00:13:36,429 --> 00:13:38,230
+models now let's talk about how it
+
+318
+00:13:38,230 --> 00:13:40,329
+improves powerful experimentation for
+
+319
+00:13:40,329 --> 00:13:42,040
+researchers unless you take models from
+
+320
+00:13:42,040 --> 00:13:43,600
+research and prototyping all the way
+
+321
+00:13:43,600 --> 00:13:45,410
+through to production
+
+322
+00:13:45,410 --> 00:13:47,239
+researchers have been using tensorflow
+
+323
+00:13:47,239 --> 00:13:49,399
+for state-of-the-art research we can see
+
+324
+00:13:49,399 --> 00:13:51,169
+it in paper publications which are shown
+
+325
+00:13:51,169 --> 00:13:53,709
+over the past few years in this chart
+
+326
+00:13:53,709 --> 00:13:56,869
+but powerful experimentation begins and
+
+327
+00:13:56,869 --> 00:13:59,119
+really needs flexibility this begins
+
+328
+00:13:59,119 --> 00:14:00,889
+with easy eager execution with tensor
+
+329
+00:14:00,889 --> 00:14:03,470
+flow and tensor flow 2.0 by default
+
+330
+00:14:03,470 --> 00:14:05,389
+every Python command is immediately
+
+331
+00:14:05,389 --> 00:14:07,459
+executed this means you can write your
+
+332
+00:14:07,459 --> 00:14:08,689
+code and the style you're used to
+
+333
+00:14:08,689 --> 00:14:11,059
+without having to use such and run this
+
+334
+00:14:11,059 --> 00:14:12,739
+also makes a big difference in the realm
+
+335
+00:14:12,739 --> 00:14:14,300
+of debugging
+
+336
+00:14:14,300 --> 00:14:16,010
+as you iterate through with eager mode
+
+337
+00:14:16,010 --> 00:14:17,330
+you'll eventually want to distribute
+
+338
+00:14:17,330 --> 00:14:19,700
+your code on two GPUs GPUs and other
+
+339
+00:14:19,700 --> 00:14:22,130
+hardware or accelerators for this we've
+
+340
+00:14:22,130 --> 00:14:23,960
+provided TF function which turns your
+
+341
+00:14:23,960 --> 00:14:25,910
+eager code into a graph function by
+
+342
+00:14:25,910 --> 00:14:27,620
+function you get all of the familiar
+
+343
+00:14:27,620 --> 00:14:30,080
+tools like Python control flow asserts
+
+344
+00:14:30,080 --> 00:14:33,110
+even print but can convert to a graph
+
+345
+00:14:33,110 --> 00:14:35,390
+anytime you need to including when
+
+346
+00:14:35,390 --> 00:14:36,740
+you're ready to move your model into
+
+347
+00:14:36,740 --> 00:14:38,840
+production and even with us you'll
+
+348
+00:14:38,840 --> 00:14:41,450
+continue to get great debugging debug
+
+349
+00:14:41,450 --> 00:14:43,670
+ability is great not just in eager but
+
+350
+00:14:43,670 --> 00:14:45,080
+we've made huge improvements in TF
+
+351
+00:14:45,080 --> 00:14:47,180
+function and graphs as well and this
+
+352
+00:14:47,180 --> 00:14:48,860
+example shown here we're splitting a
+
+353
+00:14:48,860 --> 00:14:50,930
+tensor using TF function which creates a
+
+354
+00:14:50,930 --> 00:14:52,670
+graph but because of the mismatched
+
+355
+00:14:52,670 --> 00:14:55,040
+inputs you get an error as you can see
+
+356
+00:14:55,040 --> 00:14:56,930
+we now give users the information about
+
+357
+00:14:56,930 --> 00:14:58,550
+the file and the line number where the
+
+358
+00:14:58,550 --> 00:15:00,020
+error occurred in the model to help you
+
+359
+00:15:00,020 --> 00:15:01,550
+more quickly track things down so you
+
+360
+00:15:01,550 --> 00:15:03,770
+can continue iterating we've made the
+
+361
+00:15:03,770 --> 00:15:05,750
+error messages concise easy to
+
+362
+00:15:05,750 --> 00:15:07,970
+understand and actionable we hope you
+
+363
+00:15:07,970 --> 00:15:09,560
+enjoy these changes and they make it
+
+364
+00:15:09,560 --> 00:15:11,000
+much easier for you to quickly iterate
+
+365
+00:15:11,000 --> 00:15:13,660
+and progress with your models
+
+366
+00:15:13,660 --> 00:15:16,040
+performance is another area we know that
+
+367
+00:15:16,040 --> 00:15:18,050
+researchers as well as all users for
+
+368
+00:15:18,050 --> 00:15:19,880
+that matter care about and we've
+
+369
+00:15:19,880 --> 00:15:21,560
+continued improving core performance and
+
+370
+00:15:21,560 --> 00:15:24,020
+tensor flow since last year we've sped
+
+371
+00:15:24,020 --> 00:15:26,180
+up training on eight nvidia tesla v1
+
+372
+00:15:26,180 --> 00:15:29,060
+hundreds by almost double using a google
+
+373
+00:15:29,060 --> 00:15:31,460
+cloud TPU v2 we've boosted performance
+
+374
+00:15:31,460 --> 00:15:35,000
+by 1.6 x and with Intel MKL acceleration
+
+375
+00:15:35,000 --> 00:15:36,590
+we've got an inference speed up by
+
+376
+00:15:36,590 --> 00:15:38,690
+almost three times performance we'll
+
+377
+00:15:38,690 --> 00:15:40,310
+continue to be a big focus of tensor
+
+378
+00:15:40,310 --> 00:15:42,350
+flow 2.0 and a core part of our progress
+
+379
+00:15:42,350 --> 00:15:45,320
+to final release
+
+380
+00:15:45,320 --> 00:15:47,360
+tensorflow also provides flexibility to
+
+381
+00:15:47,360 --> 00:15:49,340
+enable researchers and this is with many
+
+382
+00:15:49,340 --> 00:15:51,470
+add-on libraries that extend and expand
+
+383
+00:15:51,470 --> 00:15:54,440
+tensor flow in new and useful ways some
+
+384
+00:15:54,440 --> 00:15:56,060
+of these add-on libraries or extensions
+
+385
+00:15:56,060 --> 00:15:57,890
+to make certain problems easier like TF
+
+386
+00:15:57,890 --> 00:16:00,080
+text with Unicode and the new ragged
+
+387
+00:16:00,080 --> 00:16:02,660
+tensor type in other cases it lets us
+
+388
+00:16:02,660 --> 00:16:04,520
+explore how we can make machine learning
+
+389
+00:16:04,520 --> 00:16:07,190
+models fairer and safer by OTF privacy
+
+390
+00:16:07,190 --> 00:16:09,830
+you'll also hear new announcements on TF
+
+391
+00:16:09,830 --> 00:16:11,450
+agents for reinforcement learning and
+
+392
+00:16:11,450 --> 00:16:13,550
+tomorrow we'll be discussing the new TF
+
+393
+00:16:13,550 --> 00:16:17,210
+federated library for federated learning
+
+394
+00:16:17,210 --> 00:16:19,470
+deep loading research is also being
+
+395
+00:16:19,470 --> 00:16:21,300
+applied to real-world applications using
+
+396
+00:16:21,300 --> 00:16:23,760
+tensor flow here are a few examples from
+
+397
+00:16:23,760 --> 00:16:25,650
+researchers at Google where we see them
+
+398
+00:16:25,650 --> 00:16:27,660
+applying it areas like our data centers
+
+399
+00:16:27,660 --> 00:16:29,430
+we're making them more efficient with a
+
+400
+00:16:29,430 --> 00:16:30,990
+I control system that delivers energy
+
+401
+00:16:30,990 --> 00:16:33,870
+savings our apps like Google Maps the
+
+402
+00:16:33,870 --> 00:16:35,550
+one shown in the middle which has a new
+
+403
+00:16:35,550 --> 00:16:37,080
+navigation feature called global
+
+404
+00:16:37,080 --> 00:16:39,030
+localization it combines visual
+
+405
+00:16:39,030 --> 00:16:41,220
+positioning service Street View and
+
+406
+00:16:41,220 --> 00:16:42,720
+machine learning to more accurately
+
+407
+00:16:42,720 --> 00:16:44,790
+identify position and orientation and
+
+408
+00:16:44,790 --> 00:16:47,460
+devices like the Google pixel that use
+
+409
+00:16:47,460 --> 00:16:48,930
+machine learning to improve depth
+
+410
+00:16:48,930 --> 00:16:50,730
+estimation to create better portrait
+
+411
+00:16:50,730 --> 00:16:54,010
+mode photos like the one shown here
+
+412
+00:16:54,010 --> 00:16:55,900
+in order to make these real-world
+
+413
+00:16:55,900 --> 00:16:57,880
+applications a reality you must be able
+
+414
+00:16:57,880 --> 00:16:59,350
+to take models from research and
+
+415
+00:16:59,350 --> 00:17:00,970
+prototyping all the way through to
+
+416
+00:17:00,970 --> 00:17:02,710
+launching in production this has always
+
+417
+00:17:02,710 --> 00:17:04,360
+been a core strength and focus for
+
+418
+00:17:04,360 --> 00:17:06,670
+tensor flow using tensor flow you can
+
+419
+00:17:06,670 --> 00:17:08,140
+deploy your models on a number of
+
+420
+00:17:08,140 --> 00:17:10,600
+platforms like shown here and models end
+
+421
+00:17:10,600 --> 00:17:12,370
+up in a lot of places so we want to make
+
+422
+00:17:12,370 --> 00:17:13,990
+sure tensor flow works well across all
+
+423
+00:17:13,990 --> 00:17:16,240
+of these on servers and in cloud on
+
+424
+00:17:16,240 --> 00:17:18,850
+mobile and other edge devices in browser
+
+425
+00:17:18,850 --> 00:17:20,890
+and JavaScript platforms we have
+
+426
+00:17:20,890 --> 00:17:22,750
+products for each of these tensor flow
+
+427
+00:17:22,750 --> 00:17:24,760
+extended tons of flow light and tensor
+
+428
+00:17:24,760 --> 00:17:28,210
+flow Jas which I'll briefly talk through
+
+429
+00:17:28,210 --> 00:17:30,590
+tensorflow extended is our indian
+
+430
+00:17:30,590 --> 00:17:32,720
+platform for managing every stage of the
+
+431
+00:17:32,720 --> 00:17:34,520
+machine learning lifecycle this spans
+
+432
+00:17:34,520 --> 00:17:35,870
+all the way from ingesting and
+
+433
+00:17:35,870 --> 00:17:37,910
+transforming your data to deploying your
+
+434
+00:17:37,910 --> 00:17:39,460
+machine learning models at scale in
+
+435
+00:17:39,460 --> 00:17:40,640
+orange
+
+436
+00:17:40,640 --> 00:17:42,110
+she don't shown here you can see the
+
+437
+00:17:42,110 --> 00:17:44,390
+libraries we've open-sourced so far what
+
+438
+00:17:44,390 --> 00:17:45,890
+this slide alludes to is that we're now
+
+439
+00:17:45,890 --> 00:17:47,539
+taking a step further and providing
+
+440
+00:17:47,539 --> 00:17:49,190
+components built from these libraries
+
+441
+00:17:49,190 --> 00:17:51,260
+that make up an end-to-end platform and
+
+442
+00:17:51,260 --> 00:17:53,419
+note these are the same components that
+
+443
+00:17:53,419 --> 00:17:55,100
+are used internally in thousands of
+
+444
+00:17:55,100 --> 00:17:56,720
+production systems powering Google's
+
+445
+00:17:56,720 --> 00:18:00,200
+most important products the components
+
+446
+00:18:00,200 --> 00:18:02,539
+are only part of the story 2019 is the
+
+447
+00:18:02,539 --> 00:18:04,070
+year we're putting it all together and
+
+448
+00:18:04,070 --> 00:18:06,140
+providing you with an integrated into
+
+449
+00:18:06,140 --> 00:18:08,630
+end platform first you can bring your
+
+450
+00:18:08,630 --> 00:18:10,730
+own Orchestrator here we're showing air
+
+451
+00:18:10,730 --> 00:18:12,799
+flow or coop flow or even raw kubernetes
+
+452
+00:18:12,799 --> 00:18:15,169
+whatever you want no matter what
+
+453
+00:18:15,169 --> 00:18:16,970
+Orchestrator you choose the tensor flow
+
+454
+00:18:16,970 --> 00:18:18,590
+extending components integrate with a
+
+455
+00:18:18,590 --> 00:18:20,960
+metadata store this store keeps track of
+
+456
+00:18:20,960 --> 00:18:22,970
+all the component runs the artifacts
+
+457
+00:18:22,970 --> 00:18:24,919
+that went into him into them and the
+
+458
+00:18:24,919 --> 00:18:26,870
+artifacts that were also produced this
+
+459
+00:18:26,870 --> 00:18:28,280
+enables advanced features like
+
+460
+00:18:28,280 --> 00:18:30,169
+experiments experimentation and
+
+461
+00:18:30,169 --> 00:18:32,570
+experiment tracking model comparison and
+
+462
+00:18:32,570 --> 00:18:34,340
+things along those lines that I'm sure
+
+463
+00:18:34,340 --> 00:18:35,990
+you'll be excited about and will help
+
+464
+00:18:35,990 --> 00:18:38,659
+you as you iterate through and work with
+
+465
+00:18:38,659 --> 00:18:40,549
+your production systems we have an end
+
+466
+00:18:40,549 --> 00:18:42,049
+and talk coming up later today from
+
+467
+00:18:42,049 --> 00:18:43,580
+Clements and his team in which they'll
+
+468
+00:18:43,580 --> 00:18:45,350
+take you on a complete tour of using
+
+469
+00:18:45,350 --> 00:18:46,760
+tensor flow extended to solve a real
+
+470
+00:18:46,760 --> 00:18:48,889
+problem
+
+471
+00:18:48,889 --> 00:18:51,269
+moving on tensorflow light is our
+
+472
+00:18:51,269 --> 00:18:52,769
+solution for running models on mobile
+
+473
+00:18:52,769 --> 00:18:55,440
+and IOT hardware it uses a custom stream
+
+474
+00:18:55,440 --> 00:18:56,970
+line file format and a stripped-down
+
+475
+00:18:56,970 --> 00:18:58,919
+runtime so you can deploy tensorflow
+
+476
+00:18:58,919 --> 00:19:01,139
+models everywhere your users are on
+
+477
+00:19:01,139 --> 00:19:03,600
+device models can be more responsive to
+
+478
+00:19:03,600 --> 00:19:05,669
+input than cloud backends and they keep
+
+479
+00:19:05,669 --> 00:19:07,799
+user data on device for privacy which is
+
+480
+00:19:07,799 --> 00:19:09,299
+very important especially in this day
+
+481
+00:19:09,299 --> 00:19:12,240
+and age Google and our partners like hae
+
+482
+00:19:12,240 --> 00:19:14,639
+in China use TF Lite for all kinds of
+
+483
+00:19:14,639 --> 00:19:16,350
+tools including predictive text
+
+484
+00:19:16,350 --> 00:19:19,049
+generation video segmentation and things
+
+485
+00:19:19,049 --> 00:19:21,130
+like edge detection
+
+486
+00:19:21,130 --> 00:19:23,440
+but under the hood tensorflow light is
+
+487
+00:19:23,440 --> 00:19:25,539
+about performance you can deploy models
+
+488
+00:19:25,539 --> 00:19:28,660
+to CPU GPU and even edge CPUs and expect
+
+489
+00:19:28,660 --> 00:19:30,730
+fast performance and we've been refining
+
+490
+00:19:30,730 --> 00:19:32,410
+since we launched tensorflow light last
+
+491
+00:19:32,410 --> 00:19:34,900
+year by using the latest quantization
+
+492
+00:19:34,900 --> 00:19:37,059
+techniques on CPU adding support for
+
+493
+00:19:37,059 --> 00:19:40,660
+OpenGL 3.1 and metal on GPUs and tuning
+
+494
+00:19:40,660 --> 00:19:42,730
+our performance on edge CPUs we're
+
+495
+00:19:42,730 --> 00:19:44,559
+constantly pushing the limits of what is
+
+496
+00:19:44,559 --> 00:19:47,650
+possible on device and you should even
+
+497
+00:19:47,650 --> 00:19:49,330
+greater enhancements in the year ahead
+
+498
+00:19:49,330 --> 00:19:51,789
+we'll hear details from Raziel and his
+
+499
+00:19:51,789 --> 00:19:53,380
+colleagues coming up in a little bit
+
+500
+00:19:53,380 --> 00:19:55,559
+this morning
+
+501
+00:19:55,559 --> 00:19:57,760
+javascript is the number one programming
+
+502
+00:19:57,760 --> 00:19:59,710
+language in the world until recently
+
+503
+00:19:59,710 --> 00:20:01,510
+hasn't necessarily benefited from all
+
+504
+00:20:01,510 --> 00:20:02,860
+the machine learning development and
+
+505
+00:20:02,860 --> 00:20:05,200
+tools last year we released tensorflow
+
+506
+00:20:05,200 --> 00:20:07,899
+Jas a library for training and deploying
+
+507
+00:20:07,899 --> 00:20:09,399
+machine learning models in the browser
+
+508
+00:20:09,399 --> 00:20:12,460
+and on nodejs since then we've seen huge
+
+509
+00:20:12,460 --> 00:20:13,690
+adoption in the JavaScript community
+
+510
+00:20:13,690 --> 00:20:17,019
+with more than 300,000 downloads and 100
+
+511
+00:20:17,019 --> 00:20:18,850
+contributors but we're just at the
+
+512
+00:20:18,850 --> 00:20:20,620
+beginning given how big the JavaScript
+
+513
+00:20:20,620 --> 00:20:24,340
+and web ecosystem is today we're excited
+
+514
+00:20:24,340 --> 00:20:26,679
+to announce tensorflow J's version 1.0
+
+515
+00:20:26,679 --> 00:20:28,779
+this comes with many improvements and
+
+516
+00:20:28,779 --> 00:20:30,850
+new features we have a library of
+
+517
+00:20:30,850 --> 00:20:33,010
+off-the-shelf models for common machine
+
+518
+00:20:33,010 --> 00:20:34,990
+learning problems that run both in the
+
+519
+00:20:34,990 --> 00:20:37,419
+browser and on node we're also adding
+
+520
+00:20:37,419 --> 00:20:39,010
+support for more platforms where
+
+521
+00:20:39,010 --> 00:20:41,380
+JavaScript runs such as electron desktop
+
+522
+00:20:41,380 --> 00:20:44,559
+apps or mobile native platforms and a
+
+523
+00:20:44,559 --> 00:20:47,830
+huge focus in tensorflow gjs 1.0 is on
+
+524
+00:20:47,830 --> 00:20:49,779
+performance improvements as an example
+
+525
+00:20:49,779 --> 00:20:51,940
+compared to last year mobile net
+
+526
+00:20:51,940 --> 00:20:53,860
+inference and browser is now 9 times
+
+527
+00:20:53,860 --> 00:20:55,929
+faster you'll learn more about these
+
+528
+00:20:55,929 --> 00:20:59,110
+advances in our talk later in the day
+
+529
+00:20:59,110 --> 00:21:01,009
+another language that we're really
+
+530
+00:21:01,009 --> 00:21:03,230
+excited about is swift swift for
+
+531
+00:21:03,230 --> 00:21:05,210
+tensorflow is reexamining what it means
+
+532
+00:21:05,210 --> 00:21:07,669
+for performance and usability with a new
+
+533
+00:21:07,669 --> 00:21:09,620
+stack built on top of ten circles core
+
+534
+00:21:09,620 --> 00:21:11,480
+and a new programming model that it
+
+535
+00:21:11,480 --> 00:21:14,169
+intends to bring further usability and
+
+536
+00:21:14,169 --> 00:21:16,580
+today we're announcing that Swift for
+
+537
+00:21:16,580 --> 00:21:19,190
+tensorflow is now at version 0.2 it's
+
+538
+00:21:19,190 --> 00:21:21,080
+ready for you to experiment with to try
+
+539
+00:21:21,080 --> 00:21:22,730
+out and we're really excited to be
+
+540
+00:21:22,730 --> 00:21:25,970
+bringing this to the community in
+
+541
+00:21:25,970 --> 00:21:27,499
+addition to telling you about version
+
+542
+00:21:27,499 --> 00:21:29,809
+0.2 we're also excited to announce that
+
+543
+00:21:29,809 --> 00:21:32,179
+Jeremy Howard a fast a I is writing a
+
+544
+00:21:32,179 --> 00:21:34,669
+new course in Swift for tensorflow Chris
+
+545
+00:21:34,669 --> 00:21:36,019
+and Brennan will tell you a lot more
+
+546
+00:21:36,019 --> 00:21:38,890
+about this later today
+
+547
+00:21:38,890 --> 00:21:40,960
+so to recap everything we've shown you
+
+548
+00:21:40,960 --> 00:21:43,390
+so far tensorflow has grown to a full
+
+549
+00:21:43,390 --> 00:21:45,400
+ecosystem from research to production
+
+550
+00:21:45,400 --> 00:21:47,590
+from sir berlin to mobile with many
+
+551
+00:21:47,590 --> 00:21:49,840
+languages this growth has been fueled by
+
+552
+00:21:49,840 --> 00:21:51,460
+our community and honestly would not
+
+553
+00:21:51,460 --> 00:21:52,990
+have been possible without the community
+
+554
+00:21:52,990 --> 00:21:54,940
+to talk about what we're planning for
+
+555
+00:21:54,940 --> 00:21:57,640
+you and with you in 2019 I'll hand it
+
+556
+00:21:57,640 --> 00:22:08,049
+over to come on Thank You Megan hi my
+
+557
+00:22:08,049 --> 00:22:09,490
+name is Kemal and I'm the product
+
+558
+00:22:09,490 --> 00:22:12,190
+director for tensorflow I'm really
+
+559
+00:22:12,190 --> 00:22:13,690
+excited to be here today for this
+
+560
+00:22:13,690 --> 00:22:17,230
+celebration and what we're celebrating
+
+561
+00:22:17,230 --> 00:22:19,030
+is the most important part of what we're
+
+562
+00:22:19,030 --> 00:22:21,120
+building and that's the community
+
+563
+00:22:21,120 --> 00:22:23,530
+personally I love building developer
+
+564
+00:22:23,530 --> 00:22:25,750
+platforms I used to be a developer as an
+
+565
+00:22:25,750 --> 00:22:28,179
+entrepreneur and now I get to enable
+
+566
+00:22:28,179 --> 00:22:30,309
+other developers by building together a
+
+567
+00:22:30,309 --> 00:22:32,770
+better platform
+
+568
+00:22:32,770 --> 00:22:34,960
+when we started working on 2.0 we turned
+
+569
+00:22:34,960 --> 00:22:37,210
+to the community we started with the
+
+570
+00:22:37,210 --> 00:22:39,309
+request for common process consulting
+
+571
+00:22:39,309 --> 00:22:41,350
+with all of you on important product
+
+572
+00:22:41,350 --> 00:22:44,200
+decisions we received valuable feedback
+
+573
+00:22:44,200 --> 00:22:48,140
+and we can have built 2.0 without you
+
+574
+00:22:48,140 --> 00:22:49,790
+and some of you wanted to get more
+
+575
+00:22:49,790 --> 00:22:52,070
+involved so we created special interest
+
+576
+00:22:52,070 --> 00:22:55,310
+groups or cigs like networking or tensor
+
+577
+00:22:55,310 --> 00:22:57,440
+war to name a few and cigs are really a
+
+578
+00:22:57,440 --> 00:22:59,420
+great way for the community to build the
+
+579
+00:22:59,420 --> 00:23:01,460
+pieces of tensorflow that they care the
+
+580
+00:23:01,460 --> 00:23:05,090
+most about we also wanted to hear more
+
+581
+00:23:05,090 --> 00:23:06,560
+about what you were building so we
+
+582
+00:23:06,560 --> 00:23:07,730
+launched it powered by tensorflow
+
+583
+00:23:07,730 --> 00:23:10,400
+campaign and I gotta say we were amazed
+
+584
+00:23:10,400 --> 00:23:12,890
+by the creativity of the project from
+
+585
+00:23:12,890 --> 00:23:15,020
+biological image analysis to custom
+
+586
+00:23:15,020 --> 00:23:19,280
+wearables to chat BOTS so after three
+
+587
+00:23:19,280 --> 00:23:21,470
+years our community's really thriving
+
+588
+00:23:21,470 --> 00:23:25,160
+there almost 70 machine learning GT
+
+589
+00:23:25,160 --> 00:23:26,690
+e--'s right now around the world
+
+590
+00:23:26,690 --> 00:23:29,330
+eighteen hundred contributors on core
+
+591
+00:23:29,330 --> 00:23:31,310
+alone and countless more of you who are
+
+592
+00:23:31,310 --> 00:23:33,500
+doing amazing work to help make
+
+593
+00:23:33,500 --> 00:23:35,900
+tensorflow successful so on behalf of
+
+594
+00:23:35,900 --> 00:23:38,120
+the whole tensorflow team we want to say
+
+595
+00:23:38,120 --> 00:23:46,550
+a huge thank you so we have big plans
+
+596
+00:23:46,550 --> 00:23:49,070
+for 2019 and I would like to make a few
+
+597
+00:23:49,070 --> 00:23:52,550
+announcements first as our community
+
+598
+00:23:52,550 --> 00:23:55,190
+grows we welcome people who are new to
+
+599
+00:23:55,190 --> 00:23:56,690
+machine learning and it's really
+
+600
+00:23:56,690 --> 00:23:58,340
+important to provide them with the best
+
+601
+00:23:58,340 --> 00:24:01,610
+educational material so we're excited to
+
+602
+00:24:01,610 --> 00:24:03,540
+announce
+
+603
+00:24:03,540 --> 00:24:06,540
+two new online courses one is with deep
+
+604
+00:24:06,540 --> 00:24:08,580
+learning da di and it's published in the
+
+605
+00:24:08,580 --> 00:24:10,920
+Coursera platform and the others with
+
+606
+00:24:10,920 --> 00:24:13,860
+Udacity the first batch of these lessons
+
+607
+00:24:13,860 --> 00:24:16,290
+is available is available right now and
+
+608
+00:24:16,290 --> 00:24:18,750
+they provide an awesome introduction to
+
+609
+00:24:18,750 --> 00:24:21,270
+tensorflow for developers they require
+
+610
+00:24:21,270 --> 00:24:22,980
+no prior knowledge to machine learning
+
+611
+00:24:22,980 --> 00:24:25,260
+so I highly encourage you to check them
+
+612
+00:24:25,260 --> 00:24:29,430
+out next if your students for the very
+
+613
+00:24:29,430 --> 00:24:31,920
+first time you can apply to the google
+
+614
+00:24:31,920 --> 00:24:34,230
+Summer of Code program and get to work
+
+615
+00:24:34,230 --> 00:24:36,480
+with the tensorflow engineering team to
+
+616
+00:24:36,480 --> 00:24:41,389
+help build a part of tensorflow
+
+617
+00:24:41,389 --> 00:24:43,039
+talked about the powered by tensorflow
+
+618
+00:24:43,039 --> 00:24:45,649
+campaign were so excited with the
+
+619
+00:24:45,649 --> 00:24:48,019
+creativity that we decided to launch a
+
+620
+00:24:48,019 --> 00:24:51,259
+2.0 hackathon on death post to let you
+
+621
+00:24:51,259 --> 00:24:53,570
+share your latest and greatest and win
+
+622
+00:24:53,570 --> 00:24:56,299
+cool prizes so really excited to see
+
+623
+00:24:56,299 --> 00:24:59,480
+what you're going to build
+
+624
+00:24:59,480 --> 00:25:03,049
+finally as our ecosystem grows we're now
+
+625
+00:25:03,049 --> 00:25:05,210
+having a second day at the summit but we
+
+626
+00:25:05,210 --> 00:25:08,510
+really wanted to do something more we
+
+627
+00:25:08,510 --> 00:25:10,399
+wanted a place where you can share what
+
+628
+00:25:10,399 --> 00:25:12,590
+you've been building on tensorflow so
+
+629
+00:25:12,590 --> 00:25:15,480
+we're excited to announce
+
+630
+00:25:15,480 --> 00:25:17,820
+since of the world a week-long
+
+631
+00:25:17,820 --> 00:25:20,100
+conference dedicated to open source
+
+632
+00:25:20,100 --> 00:25:23,070
+collaboration this conference will be Co
+
+633
+00:25:23,070 --> 00:25:24,840
+presented by aurélie media and
+
+634
+00:25:24,840 --> 00:25:25,410
+tensorflow
+
+635
+00:25:25,410 --> 00:25:27,660
+and will be held in Santa Clara and of
+
+636
+00:25:27,660 --> 00:25:30,510
+October our vision is to bring together
+
+637
+00:25:30,510 --> 00:25:33,330
+the Austin tensorflow world and give a
+
+638
+00:25:33,330 --> 00:25:34,710
+place for folks to connect with each
+
+639
+00:25:34,710 --> 00:25:37,770
+other so I'd like to invite on stage
+
+640
+00:25:37,770 --> 00:25:40,590
+Geena blader to say a few words about
+
+641
+00:25:40,590 --> 00:25:50,000
+the conference Thank You Camille
+
+642
+00:25:50,000 --> 00:25:52,440
+O'Reilly is a learning company with a
+
+643
+00:25:52,440 --> 00:25:55,650
+focus on technology and business we have
+
+644
+00:25:55,650 --> 00:25:57,390
+strong ties with the open source
+
+645
+00:25:57,390 --> 00:25:59,820
+community as many of you know and we
+
+646
+00:25:59,820 --> 00:26:02,040
+have a history of bringing big ideas to
+
+647
+00:26:02,040 --> 00:26:05,040
+life that's why we're excited about
+
+648
+00:26:05,040 --> 00:26:06,480
+partnering with tensorflow
+
+649
+00:26:06,480 --> 00:26:08,370
+to create this new event that brings
+
+650
+00:26:08,370 --> 00:26:11,900
+machine learning and AI to the community
+
+651
+00:26:11,900 --> 00:26:14,370
+the event is tensorflow happening
+
+652
+00:26:14,370 --> 00:26:18,390
+October 28 to 31 in Santa Clara and when
+
+653
+00:26:18,390 --> 00:26:21,480
+I say community I mean everyone we want
+
+654
+00:26:21,480 --> 00:26:23,310
+to bring together the entire tensorflow
+
+655
+00:26:23,310 --> 00:26:26,630
+community of individuals and teams and
+
+656
+00:26:26,630 --> 00:26:29,190
+enterprises this is the place where
+
+657
+00:26:29,190 --> 00:26:30,630
+you'll meet experts from around the
+
+658
+00:26:30,630 --> 00:26:32,640
+world the team that actually creates
+
+659
+00:26:32,640 --> 00:26:33,510
+tensorflow
+
+660
+00:26:33,510 --> 00:26:36,270
+and the companies and enterprises that
+
+661
+00:26:36,270 --> 00:26:39,630
+will help you deploy it we have an open
+
+662
+00:26:39,630 --> 00:26:42,210
+CFP right now on the tensorflow world
+
+663
+00:26:42,210 --> 00:26:44,910
+site I invite you all to check that out
+
+664
+00:26:44,910 --> 00:26:47,520
+and send in your proposal soon so your
+
+665
+00:26:47,520 --> 00:26:49,620
+voice is heard at that event we look
+
+666
+00:26:49,620 --> 00:26:51,270
+forward to seeing you at tensorflow
+
+667
+00:26:51,270 --> 00:26:55,410
+world in october thank you
+
+668
+00:26:55,410 --> 00:26:57,789
+[Applause]
+
+669
+00:26:57,789 --> 00:27:00,139
+Thank You Gina this is gonna be great
+
+670
+00:27:00,139 --> 00:27:05,539
+are you guys excited whoo so we have a
+
+671
+00:27:05,539 --> 00:27:07,820
+few calls to action for you take a
+
+672
+00:27:07,820 --> 00:27:10,940
+course submit a talk to TF world start
+
+673
+00:27:10,940 --> 00:27:12,769
+hacking into point oh by the way the
+
+674
+00:27:12,769 --> 00:27:14,659
+grand prize is for a hackathon on DEF
+
+675
+00:27:14,659 --> 00:27:16,549
+post will include free tickets to
+
+676
+00:27:16,549 --> 00:27:20,809
+tensorflow world you know a one thing I
+
+677
+00:27:20,809 --> 00:27:23,149
+love is to hear about these amazing
+
+678
+00:27:23,149 --> 00:27:25,399
+stories of people building awesome stuff
+
+679
+00:27:25,399 --> 00:27:26,510
+on top of tensorflow
+
+680
+00:27:26,510 --> 00:27:28,909
+and as a team we really believe that AI
+
+681
+00:27:28,909 --> 00:27:31,580
+advances faster when people have access
+
+682
+00:27:31,580 --> 00:27:33,799
+to our tools and can then apply them to
+
+683
+00:27:33,799 --> 00:27:35,690
+the problems that they care about in
+
+684
+00:27:35,690 --> 00:27:38,929
+ways that we never really dreamed of and
+
+685
+00:27:38,929 --> 00:27:40,870
+people when people can really do that
+
+686
+00:27:40,870 --> 00:27:43,760
+some special things happen and I'd like
+
+687
+00:27:43,760 --> 00:27:45,110
+to share with you something really
+
+688
+00:27:45,110 --> 00:27:50,900
+special
+
+689
+00:27:50,900 --> 00:27:53,730
+consult our documentary sobre todo
+
+690
+00:27:53,730 --> 00:27:56,340
+document in medieval a dia de sempre
+
+691
+00:27:56,340 --> 00:28:02,220
+molto Tampa Malta Batsy Anza yenakiyevo
+
+692
+00:28:02,220 --> 00:28:03,000
+Takano
+
+693
+00:28:03,000 --> 00:28:05,580
+abbiamo Santosh in kilometres in area
+
+694
+00:28:05,580 --> 00:28:08,400
+document pure men all along gates at the
+
+695
+00:28:08,400 --> 00:28:11,070
+canal de Panama descriptor a discreet
+
+696
+00:28:11,070 --> 00:28:13,320
+nelma do avo sono diverse edevalla
+
+697
+00:28:13,320 --> 00:28:15,750
+denomination sake we're committed a
+
+698
+00:28:15,750 --> 00:28:18,360
+sound or not the transcriber a trade or
+
+699
+00:28:18,360 --> 00:28:21,090
+to t documented LF gia vaticano super
+
+700
+00:28:21,090 --> 00:28:23,730
+elementary dragoon motto looking at this
+
+701
+00:28:23,730 --> 00:28:26,130
+book page by page and trying to decipher
+
+702
+00:28:26,130 --> 00:28:28,500
+grid and transcribe whatever is there
+
+703
+00:28:28,500 --> 00:28:32,610
+takes an enormous amount of time she
+
+704
+00:28:32,610 --> 00:28:35,690
+would require an army of paleography
+
+705
+00:28:35,690 --> 00:28:38,670
+what i'm excited the most about smashing
+
+706
+00:28:38,670 --> 00:28:41,400
+learning i said it enabled us to solve
+
+707
+00:28:41,400 --> 00:28:43,590
+problems that up to ten fifteen years
+
+708
+00:28:43,590 --> 00:28:46,920
+ago without unsolvable in karate not
+
+709
+00:28:46,920 --> 00:28:49,290
+requested any costly a software
+
+710
+00:28:49,290 --> 00:28:51,510
+purported interpret our brutality Lucas
+
+711
+00:28:51,510 --> 00:28:53,370
+kita dendrimers critic Wanda brem
+
+712
+00:28:53,370 --> 00:28:55,110
+initiated approach re problem attrition
+
+713
+00:28:55,110 --> 00:28:56,280
+Orissa Kentucky knows will turn a
+
+714
+00:28:56,280 --> 00:28:58,200
+possibility no rally for say as
+
+715
+00:28:58,200 --> 00:29:01,110
+Reutimann Tanisha's Aria la shelter zoo
+
+716
+00:29:01,110 --> 00:29:03,950
+tensorflow esta vez and Sarah to rally
+
+717
+00:29:03,950 --> 00:29:06,930
+before using any kind of machine
+
+718
+00:29:06,930 --> 00:29:08,940
+learning model we needed to collect data
+
+719
+00:29:08,940 --> 00:29:11,160
+first you have thousands of images of
+
+720
+00:29:11,160 --> 00:29:13,620
+dogs and cats in the internet but it's
+
+721
+00:29:13,620 --> 00:29:15,450
+very little images of ancient
+
+722
+00:29:15,450 --> 00:29:19,500
+manuscripts we build our own custom web
+
+723
+00:29:19,500 --> 00:29:22,050
+application for crowdsourcing and we
+
+724
+00:29:22,050 --> 00:29:25,290
+involved high school students to collect
+
+725
+00:29:25,290 --> 00:29:27,570
+the data I didn't know much about
+
+726
+00:29:27,570 --> 00:29:30,000
+machine learning in general but I found
+
+727
+00:29:30,000 --> 00:29:32,970
+it very easy to create a tensorflow
+
+728
+00:29:32,970 --> 00:29:35,460
+environment when we were trying to
+
+729
+00:29:35,460 --> 00:29:38,250
+figure out which model work best for us
+
+730
+00:29:38,250 --> 00:29:40,050
+caris was the best solution the
+
+731
+00:29:40,050 --> 00:29:42,300
+production model runs on tons of flow
+
+732
+00:29:42,300 --> 00:29:44,790
+layers and estimator interface we
+
+733
+00:29:44,790 --> 00:29:47,610
+experimented with binary classification
+
+734
+00:29:47,610 --> 00:29:50,670
+fully connected networks and finally we
+
+735
+00:29:50,670 --> 00:29:52,770
+move to convolutional neural network and
+
+736
+00:29:52,770 --> 00:29:55,110
+multi-class classification in poco
+
+737
+00:29:55,110 --> 00:29:58,230
+tiempo say malucia tia as VIP artists
+
+738
+00:29:58,230 --> 00:30:00,570
+are le premiers of its own when it comes
+
+739
+00:30:00,570 --> 00:30:03,060
+to recognizing single characters we can
+
+740
+00:30:03,060 --> 00:30:05,790
+get 95% average accuracy
+
+741
+00:30:05,790 --> 00:30:09,060
+Patera cheddar most amento format ago
+
+742
+00:30:09,060 --> 00:30:12,480
+abre via medieval meant Salieri shared
+
+743
+00:30:12,480 --> 00:30:14,940
+abbreviation comprende room Tesco in
+
+744
+00:30:14,940 --> 00:30:18,330
+Quilici to Ragosa Kritika uncle cosas de
+
+745
+00:30:18,330 --> 00:30:20,310
+traditionally this will have an enormous
+
+746
+00:30:20,310 --> 00:30:23,100
+impact in a short period of time we will
+
+747
+00:30:23,100 --> 00:30:25,560
+have a massive quantity of historical
+
+748
+00:30:25,560 --> 00:30:27,720
+information available I just think
+
+749
+00:30:27,720 --> 00:30:30,510
+solving problems is fun it's a game
+
+750
+00:30:30,510 --> 00:30:34,560
+against myself and how good I can do law
+
+751
+00:30:34,560 --> 00:30:37,620
+studio de la storia important isom /
+
+752
+00:30:37,620 --> 00:30:40,560
+comprende knows represent a para ver en
+
+753
+00:30:40,560 --> 00:30:51,990
+que una perspectiva very food or oh this
+
+754
+00:30:51,990 --> 00:30:53,970
+is this is such a great story I think
+
+755
+00:30:53,970 --> 00:30:55,380
+about the scholars who wrote these
+
+756
+00:30:55,380 --> 00:30:58,020
+manuscripts you could imagine they could
+
+757
+00:30:58,020 --> 00:30:59,600
+have been imagined that centuries later
+
+758
+00:30:59,600 --> 00:31:02,070
+people will be using computers to bring
+
+759
+00:31:02,070 --> 00:31:03,960
+back to life their work so we're really
+
+760
+00:31:03,960 --> 00:31:06,060
+lucky to have Elena with us today lino
+
+761
+00:31:06,060 --> 00:31:15,210
+would you stand
+
+762
+00:31:15,210 --> 00:31:17,350
+don't miss the talk where she will share
+
+763
+00:31:17,350 --> 00:31:20,020
+her story today I'm I really hope you
+
+764
+00:31:20,020 --> 00:31:21,429
+have a great day we have some really
+
+765
+00:31:21,429 --> 00:31:24,220
+awesome things the team and I there will
+
+766
+00:31:24,220 --> 00:31:26,049
+be around please come and say hi we want
+
+767
+00:31:26,049 --> 00:31:28,600
+to hear from you and with that I'm gonna
+
+768
+00:31:28,600 --> 00:31:30,820
+hand it over to Martin who will talk
+
+769
+00:31:30,820 --> 00:31:32,730
+about tensorflow 2.0 thank you
+
+770
+00:31:32,730 --> 00:31:42,509
+[Music]
+
